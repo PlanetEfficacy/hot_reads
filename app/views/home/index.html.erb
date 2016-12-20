@@ -1,0 +1,13 @@
+<h1>Hot Reads</h1>
+<table>
+  <thead>
+    <th>Url</th>
+    <th>Reads in past 24 hours</th>
+  </thead>
+  <% @reads.each do |read| %>
+    <tr>
+      <td><%= link_to read[0], read[0] %></td>
+      <td><%= read[1] %></td>
+    </tr>
+  <% end %>
+</table>

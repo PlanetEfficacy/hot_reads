@@ -1,5 +1,5 @@
 class HomeController < ApplicationController
   def index
-    @links = Link.top
+    @reads = Read.top
   end
 end
